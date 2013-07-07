@@ -70,7 +70,7 @@ var checkDOM = function(dom, checksfile) {
 var checkUrl = function(url,checkfile) {
   rest.get(url).on('complete', function(result) {
   	if(result instanceof Error) {
-	   console.log("$s not found. Exiting", url);
+	   console.log("%s not found. Exiting", url);
            process.exit(1);
         }
         else {
