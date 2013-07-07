@@ -74,8 +74,9 @@ var checkUrl = function(url,checkfile) {
            process.exit(1);
         }
         else {
-	  var outJson= checkDOM(result,checkfile);        
-          console.log(outJson);
+	  var checkJson= checkDOM(result,checkfile);        
+          var outJson = JSON.stringify(checkJson,null,4); 
+         console.log(outJson);
          }
   });
 }
